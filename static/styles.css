@@ -1,0 +1,311 @@
+@font-face {
+    font-family: myFont;
+    src: url(NickelodeonNF.otf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(BalooBhaijaan2-Regular.ttf);
+}
+
+@font-face {
+    font-family: codeFont;
+    src: url(SourceCodePro-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: myFont;
+    color: white;
+    background-size: cover;
+    margin: 0;
+    
+}
+
+.bg{
+    max-width: 100%;
+    height: auto;
+    filter: brightness(30%);
+}
+
+.logo{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
+}
+.container{
+    width: 40%;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.hd-index{
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.hd-index-loss{
+    font-family: codeFont;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.description{
+    padding: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 25px;
+    text-align: center;
+    font-family:codeFont;
+}
+
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.qs-page{
+    font-family: codeFont;
+}
+
+.qs-bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    filter:blur(3px) brightness(70%);
+    margin: 0;
+}
+
+.picture-div{
+    position: absolute;
+    top: 80px;
+    left: 43%;
+    /*
+    left: 822
+    top: 80
+    */
+    width: 900px;
+}
+
+.picture{
+    width: 100%;
+    height: 450px;
+    filter: drop-shadow(16px 16px 20px white);
+    border-radius: 5px;
+}
+
+.block1{
+    position: absolute;
+    top:80px;
+    left: 5%;
+    background-color: whitesmoke;
+    opacity: 10%;
+    border-radius: 5px;
+    padding: 20px;
+    width: 27%;
+    height: 410px;
+}
+
+.qs-info{
+    position: absolute;
+    top:80px;
+    left: 5%;
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 20px;
+    width: 27%;
+    height: 410px;
+    font-family: codeFont;
+}
+
+
+
+.qs-input{
+    border: none;
+    border-bottom: 5px solid black;
+    background: transparent;
+    width: 65%;
+    display: inline;
+    font-size: 50px;
+    color: white;
+    font-family: codeFont;
+    outline: none;
+}
+
+.qs-input::placeholder{
+    color: white;
+
+}
+
+.qs-input::placeholder:focus{
+    color: white;
+
+}
+.qs-input:focus {
+    border: none;
+    border-bottom: 5px solid white;
+    text-decoration: none;
+    outline: none;
+  }
+
+.qs-form-div{
+    position: absolute;
+    top:700px;
+    left: 21%;
+    font-size: 90px;
+    padding: 20px;
+    height: 120px;
+    width: 60%;
+}
+
+.block{
+    background-color: white;
+    filter: opacity(10%);
+    position: absolute;
+    top:700px;
+    left: 20%;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    height: 120px;
+    width: 60%;
+}
+
+.qs-score{
+    margin-top: 14%;
+}
+
+
+.qs-form{
+    display: inline;
+}
+
+.qs-title{
+    display: inline;
+}
+
+.score-form{
+    display: inline;
+    margin-left: 4%;
+}
+
+.movie-info{
+    font-family: codeFont;
+    height: 60%;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.qs-button {
+	background: white;
+	padding: 0;
+	border-radius: 5px;
+    width: 250px;
+}
+
+.qs-button span {
+	display: block;
+	background: black;
+	padding: 1.5rem 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: codeFont;
+	border-radius: 5px;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.qs-button:hover span {
+	transform: translate3d(-8px, -8px, 0);
+}
+
+.qs-button-end {
+	background: white;
+	padding: 0;
+	border-radius: 5px;
+    width: 250px;
+}
+
+.qs-button-end span {
+	display: block;
+	background: black;
+	padding: 1.5rem 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: codeFont;
+	border-radius: 5px;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.qs-button-end:hover span {
+	transform: translate3d(-8px, -8px, 0);
+}
+
+.qs-button-next {
+	background: white;
+	padding: 0;
+	border-radius: 5px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.qs-button-next span {
+	display: block;
+	background: black;
+	padding: 1.5rem 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: codeFont;
+	border-radius: 5px;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.qs-button-next:hover span {
+	transform: translate3d(-8px, -8px, 0);
+}
+
+
+.bt {
+	background: white;
+	padding: 0;
+	border-radius: 5px;
+    width: 250px;
+}
+
+.bt span {
+	display: block;
+	background: black;
+	padding: 1.5rem 2rem;
+    color: white;
+    border: solid;
+    font-size: 20px;
+    font-family: codeFont;
+	border-radius: 5px;
+	transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.bt:hover span {
+	transform: translate3d(-8px, -8px, 0);
+}
+
+/*
+https://static01.nyt.com/images/2013/07/19/arts/20130719-OUTDOORS-slide-NTT4/20130719-OUTDOORS-slide-NTT4-superJumbo.jpg

@@ -1,0 +1,6 @@
+Do zrobienia:
+1. messenger api - możliwość pochwalenia sie wynikiem
+2. Web scraping 
+3. responsywność 
+4. Dwie opcje(1 - tylko klasyki( moja własna baza filmów) 2-Dużo różnych filmów(filmy z imdb top 100))
+5. zrobić ładną struktórę projektu i wgrać go na github
