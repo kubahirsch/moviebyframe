@@ -21,13 +21,13 @@ body{
     
 }
 
-.bg{
+.id-bg{
     max-width: 100%;
     height: auto;
     filter: brightness(30%);
 }
 
-.logo{
+.id-logo{
     position: absolute;
     top: 10%;
     left: 50%;
