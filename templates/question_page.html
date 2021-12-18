@@ -1,52 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
-    <title>Movie by frame</title>
-</head>
-<body class="qs-page">
-    
-    
-    <div class="wraper2">
-        <img class="qs-bg" src="../static/drive-in-movie-theaters-hero.jpg">
-        <div class="picture-div">
+{% extends 'base.html' %}
 
-            <img class="picture" src={{imgUrl}}>
+{% block body %}
+<div class="wraper">
+    <img class="qs-bg" src="../static/drive-in-movie-theaters-hero.jpg">
+    <div class="picture-div">
+
+        <img class="picture" src={{imgUrl}}>
+    </div>
+    <div class="block1"></div>
+    <div class="qs-info">
+        <div class="movie-info" style="visibility: hidden;">
+            Gratulacje!!<br><br>
+            Tytuł filmu to: <b>asasdfasdfasdfasafdf</b><br>
+            Wydany w: <b>1890</b><br>
+            <form method="post" name="question" class="movie-form">
+                <button class="qs-button-next" value="next" name="action1"><span>Następne pytanie</span></button>
+            </form> 
         </div>
-        <div class="block1"></div>
-        <div class="qs-info">
-            <div class="movie-info" style="visibility: hidden;">
-                Gratulacje!!<br><br>
-                Tytuł filmu to: <b>asasdfasdfasdfasafdf</b><br>
-                Wydany w: <b>1890</b><br>
-                <form method="post" name="question" class="movie-form">
-                    <button class="qs-button-next" value="next" name="action1"><span>Następne pytanie</span></button>
+        <div class="qs-score">
+            Score: {{wynik}}
+            <div class="score-form">
+                <form method="post" name="question" class="score-form">
+                    <button class="qs-button-end" value="koniec gry" name="action1"><span>Koniec gry</span></button>
                 </form> 
             </div>
-            <div class="qs-score">
-                Score: {{wynik}}
-                <div class="score-form">
-                    <form method="post" name="question" class="score-form">
-                        <button class="qs-button-end" value="koniec gry" name="action1"><span>Koniec gry</span></button>
-                    </form> 
-                </div>
-            </div>
-            
         </div>
-        <div class="block"></div>
-        <div class="qs-form-div">
-            <form method="post" name="question" class="qs-form">
-                <input class="qs-input" type="text" name="input" placeholder="Title..." >
-                <!---<input class="qs-button" type="submit" value="Sprawdz" name="action1"> --->
-                <button class="qs-button" value="Sprawdz" name="action1" onclick="toggle_display()"><span>Check</span></button>
-            </form>
-        </div>
-
+        
     </div>
-    
-    
-</body>
-</html>
+    <div class="block"></div>
+    <div class="qs-form-div">
+        <form method="post" name="question" class="qs-form">
+            <input class="qs-input" type="text" name="input" placeholder="Title..." >
+            <!---<input class="qs-button" type="submit" value="Sprawdz" name="action1"> --->
+            <button class="qs-button" value="Sprawdz" name="action1" onclick="toggle_display()"><span>Check</span></button>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

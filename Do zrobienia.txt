@@ -4,3 +4,7 @@ Do zrobienia:
 3. responsywność 
 4. Dwie opcje(1 - tylko klasyki( moja własna baza filmów) 2-Dużo różnych filmów(filmy z imdb top 100))
 5. zrobić ładną struktórę projektu i wgrać go na github
+
+
+Błędy: 
+1. jak zgadniesz dobrze i jest za długi tytuł to buttony wchodzą na siebie

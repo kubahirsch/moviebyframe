@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/styles.css">
-    <title>Movie by frame</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block body %}
     
-    <div class="wraper">
-        <img class="bg" src="../static/20130719-OUTDOORS-slide-NTT4-superJumbo.jpg">
-        <div class="logo">
-            <img src="../static/Simple_Film_Company_Logo-removebg-preview.png">
+<div class="wraper">
+    <img class="bg" src="../static/20130719-OUTDOORS-slide-NTT4-superJumbo.jpg">
+    <div class="logo">
+        <img src="../static/Simple_Film_Company_Logo-removebg-preview.png">
+    </div>
+    <div class="container">
+        <div class="hd-index-loss">
+            <br><br>
+            Niestety przegrałeś <br>:(((<br><br>
+            Ten film nazywał się: <br><b>{{imgTitle}}</b><br>
         </div>
-        <div class="container">
-            <div class="hd-index-loss">
-                <br><br>
-                Niestety przegrałeś <br>:(((<br><br>
-                Ten film nazywał się: <br><b>{{imgTitle}}</b><br>
-            </div>
-            <div class="description">
-                Twój ostateczny wynik to {{wynik}}<br><br>
-                Pochwal się zajomymy:
-            </div>
-            <div class="button">    
-                <form method="post" name="index">
-                    <button class="bt" value="Zaczynamy" name="action1"><span>GRAM JESZCZE RAZ</span></button>
-                </form>
-            </div>
+        <div class="description">
+            Twój ostateczny wynik to {{wynik}}<br><br>
+            Pochwal się zajomymy:
+        </div>
+        <div class="button">    
+            <form method="post" name="index">
+                <button class="bt" value="Zaczynamy" name="action1"><span>GRAM JESZCZE RAZ</span></button>
+            </form>
         </div>
     </div>
-</body>
-</html>
+</div>
+{% endblock %}
