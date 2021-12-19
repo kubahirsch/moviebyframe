@@ -5,13 +5,7 @@ from moviedb import photos, filmwebMovies
 
 app = Flask(__name__)
 
-
-
-
-
-@app.route('/', methods=["POST", "GET"])
-def home():
-    class Changing:
+class Changing:
         random_number = randrange(124)
         score = 0
 
@@ -28,12 +22,17 @@ def home():
             self.score = 0
             return
             
-    changing = Changing()
 
+changing = Changing()
+
+@app.route('/', methods=["POST", "GET"])
+def home():
+    
     if request.method == "POST":
         if(request.form.get("action1") == "Zaczynamy" or request.form.get("action1") == "graj jeszcze raz"):
             changing.zero_score()
             changing.change_random_number()
+            print(filmwebMovies[changing.random_number]['title'])
             return render_template("question_page.html", imgUrl=filmwebMovies[changing.random_number]["url"])
             
         user_input = request.form.get("input")
@@ -59,6 +58,12 @@ def home():
     return render_template("index.html", imgUrl=photos[changing.random_number]["url"])
 
     
+# @app.route('/correct', methods = ['POST','GET'])
+# def correct():
+#     return render_template("incorrect.html", wynik = temp, imgTitle = filmwebMovies[changing.random_number]["title"])
+
+    
+
 
 
 if __name__ == "__main__":
