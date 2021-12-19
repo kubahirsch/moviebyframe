@@ -9,6 +9,8 @@ app = Flask(__name__)
             
 
 changing = Changing()
+print("WYKONAŁO SIĘ JESZCZE RAZ ")
+
 
 @app.route('/', methods=["POST", "GET"])
 def home():
