@@ -8,12 +8,12 @@ app = Flask(__name__)
 
 
 class Changing:
-    random_number = randrange(125)
+    random_number = randrange(124)
     score = 0
 
 
     def change_random_number(self):
-        self.random_number = randrange(125)
+        self.random_number = randrange(124)
         return
 
     def add_point(self):
